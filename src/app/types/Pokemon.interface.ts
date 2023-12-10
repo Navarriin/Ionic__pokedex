@@ -1,12 +1,22 @@
 export interface Pokemon {
   name: string;
-  sprites: Other;
+  id: number;
+  type: Type;
+  stats: Stats;
+  stat: Stats;
+  base_stat: number;
 }
 
-export interface Other {
-  other: Dream_world;
+interface Type {
+  name: string;
 }
 
-export interface Dream_world {
-  front_default: string;
+interface Stats {
+  base_stat: number;
+  stat: Stat;
+  name: string;
+}
+
+interface Stat {
+  name: string;
 }

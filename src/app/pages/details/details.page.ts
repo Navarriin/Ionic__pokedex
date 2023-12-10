@@ -11,6 +11,8 @@ import { Pokemon } from 'src/app/types/Pokemon.interface';
 export class DetailsPage implements OnInit {
   pokemonName!: Pokemon;
   pokemonId!: Pokemon;
+  types!: Pokemon[];
+  stats!: Pokemon[];
 
   constructor(private api: PokeApiService, private route: ActivatedRoute) {}
 
@@ -25,7 +27,8 @@ export class DetailsPage implements OnInit {
     this.api.getPokemon(id).subscribe((data) => {
       this.pokemonName = data.name;
       this.pokemonId = data.id;
-      console.log(data);
+      this.types = data.types;
+      this.stats = data.stats;
     });
   }
 }

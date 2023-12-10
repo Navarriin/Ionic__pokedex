@@ -1,24 +1,46 @@
+.image {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  padding: 1rem;
+}
+
 .title {
+  font-size: 26px;
   text-align: center;
   text-transform: capitalize;
-
-  &.name {
-    font-size: 26px;
-    text-align: start;
-  }
 }
 
 .subtitles {
-  margin-top: 0.6rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
+  margin-top: 1.2rem;
+
   text-align: center;
+  text-transform: capitalize;
 
   &__item {
+    min-width: 100px;
+
     color: #f2f2f2;
-    padding: 0.3rem 0.4rem;
+    padding: 0.5rem 0.6rem;
 
     background-color: rgb(70, 67, 67);
     border-radius: 20px;
   }
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+
+  text-transform: capitalize;
+}
+
+.btn {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.6rem;
 }

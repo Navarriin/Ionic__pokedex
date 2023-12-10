@@ -1,24 +1,28 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title class="title">{{ pokemonName }}</ion-title>
+    <ion-title class="title">Pokemon</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-card>
     <img alt="Silhouette of mountains"
-      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/{{pokemonId}}.svg" />
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/{{pokemonId}}.svg"
+      class="image" />
     <ion-card-header>
       <ion-card-title class="title name">{{ pokemonName }}</ion-card-title>
       <div class="subtitles">
-        <ion-card-subtitle class="subtitles__item">Card Subtitle</ion-card-subtitle>
-        <ion-card-subtitle class="subtitles__item">Card Subtitle</ion-card-subtitle>
-        <ion-card-subtitle class="subtitles__item">Card Subtitle</ion-card-subtitle>
+        <ion-card-subtitle *ngFor="let type of types" class="subtitles__item">{{ type.type.name }}</ion-card-subtitle>
       </div>
     </ion-card-header>
-
     <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
+      <ion-list lines="inset">
+        <ion-item *ngFor="let pokeStat of stats">
+          <ion-label class="stats">{{ pokeStat.stat.name }} <span>{{ pokeStat.base_stat }}</span></ion-label>
+        </ion-item>
+      </ion-list>
     </ion-card-content>
   </ion-card>
+  <ion-button class="btn" color="medium" fill="outline" size="large" shape="round" expand="full"
+    routerLink="/folder/inbox">Voltar</ion-button>
 </ion-content>
