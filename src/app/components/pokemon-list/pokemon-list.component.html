@@ -1,8 +1,8 @@
 <ion-list [inset]="true">
   <ion-item *ngFor="let poke of pokemons">
-    <img
+    <img class="imagem"
       src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/{{poke.entry_number}}.svg"
-      width="60px" alt="">
+      alt="imagem do pokemon">
     <ion-label>{{ poke.pokemon_species.name }}</ion-label>
   </ion-item>
 

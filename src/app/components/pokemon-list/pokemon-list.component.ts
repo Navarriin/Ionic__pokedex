@@ -8,12 +8,12 @@ import { PokeApiService } from 'src/app/services/poke-api.service';
 })
 export class PokemonListComponent {
   pokemons: any[] = [];
+
   constructor(private apiService: PokeApiService) {
     this.getPokemons();
-    console.log(this.pokemons);
   }
 
-  getPokemons() {
+  getPokemons(): void {
     this.apiService.getAllPokemons().subscribe((data) => {
       this.pokemons = data.pokemon_entries;
     });
