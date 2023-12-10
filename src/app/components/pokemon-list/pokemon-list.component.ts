@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { PokeApiService } from 'src/app/services/poke-api.service';
+import { Pokemon } from 'src/app/types/Pokemon.interface';
 
 @Component({
   selector: 'app-pokemon-list',

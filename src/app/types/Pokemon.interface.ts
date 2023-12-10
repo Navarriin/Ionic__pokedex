@@ -5,6 +5,8 @@ export interface Pokemon {
   stats: Stats;
   stat: Stats;
   base_stat: number;
+  other: Other;
+  dream_world: Other;
 }
 
 interface Type {
@@ -19,4 +21,8 @@ interface Stats {
 
 interface Stat {
   name: string;
+}
+
+interface Other {
+  dream_world: string;
 }

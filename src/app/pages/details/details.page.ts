@@ -10,7 +10,7 @@ import { Pokemon } from 'src/app/types/Pokemon.interface';
 })
 export class DetailsPage implements OnInit {
   pokemonName!: Pokemon;
-  pokemonId!: Pokemon;
+  pokeImage!: Pokemon[];
   types!: Pokemon[];
   stats!: Pokemon[];
 
@@ -26,9 +26,9 @@ export class DetailsPage implements OnInit {
   getPokemon(id: number): void {
     this.api.getPokemon(id).subscribe((data) => {
       this.pokemonName = data.name;
-      this.pokemonId = data.id;
       this.types = data.types;
       this.stats = data.stats;
+      this.pokeImage = data.sprites.other.dream_world.front_default;
     });
   }
 }
