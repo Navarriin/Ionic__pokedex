@@ -8,9 +8,16 @@ import { FolderPageRoutingModule } from './folder-routing.module';
 
 import { FolderPage } from './folder.page';
 import { PokemonListComponent } from '../components/pokemon-list/pokemon-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, IonicModule, FolderPageRoutingModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    FolderPageRoutingModule,
+    
+  ],
   declarations: [FolderPage, PokemonListComponent],
 })
 export class FolderPageModule {}
