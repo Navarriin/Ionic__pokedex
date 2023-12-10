@@ -1,0 +1,24 @@
+.title {
+  text-align: center;
+  text-transform: capitalize;
+
+  &.name {
+    font-size: 26px;
+    text-align: start;
+  }
+}
+
+.subtitles {
+  margin-top: 0.6rem;
+  display: flex;
+  gap: 0.5rem;
+  text-align: center;
+
+  &__item {
+    color: #f2f2f2;
+    padding: 0.3rem 0.4rem;
+
+    background-color: rgb(70, 67, 67);
+    border-radius: 20px;
+  }
+}

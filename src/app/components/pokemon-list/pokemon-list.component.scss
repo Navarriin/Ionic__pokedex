@@ -1,5 +1,11 @@
-.imagem {
-  height: 60px;
-  width: 60px;
-  margin-right: 1rem;
+.details {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .imagem {
+    height: 60px;
+    width: 60px;
+    margin-right: 1rem;
+  }
 }

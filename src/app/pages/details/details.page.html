@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="title">{{ pokemonName }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <img alt="Silhouette of mountains"
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/{{pokemonId}}.svg" />
+    <ion-card-header>
+      <ion-card-title class="title name">{{ pokemonName }}</ion-card-title>
+      <div class="subtitles">
+        <ion-card-subtitle class="subtitles__item">Card Subtitle</ion-card-subtitle>
+        <ion-card-subtitle class="subtitles__item">Card Subtitle</ion-card-subtitle>
+        <ion-card-subtitle class="subtitles__item">Card Subtitle</ion-card-subtitle>
+      </div>
+    </ion-card-header>
+
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+  </ion-card>
+</ion-content>
