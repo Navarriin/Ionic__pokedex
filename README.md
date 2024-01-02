@@ -17,7 +17,7 @@ Projeto de listagem de pokemons onde ao clicar você pode olhar a estatísticas 
 
 ### 1. Clone o repositório
 ```
-git clone https://github.com/Navarriin/Meu_portfolio.git
+git clone https://github.com/Navarriin/Ionic__pokedex.git
 ```
 
 ### 2. Instale as dependencias
